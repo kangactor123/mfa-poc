@@ -18,8 +18,8 @@ export const routes: RouteObject[] = [
     ),
     errorElement: <div>error in remote</div>,
     children: [
-      { index: true, element: <Navigate to="home" /> },
-      { path: "home", element: <Home /> },
+      { index: true, element: <Navigate to="/home" /> },
+      { path: "/home", element: <Home /> },
       { path: "list", element: <List /> },
     ],
   },
