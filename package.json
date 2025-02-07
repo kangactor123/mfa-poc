@@ -1,0 +1,21 @@
+{
+  "packageManager": "pnpm@9.12.2",
+  "name": "@mfa/monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "turbo start",
+    "start:prod": "turbo preview",
+    "build:prod": "turbo build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.0"
+  }
+}
