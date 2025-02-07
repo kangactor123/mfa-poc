@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 // 쉘 간 Navigate 이벤트를 Listen
 export default function useShellNavigateListener() {

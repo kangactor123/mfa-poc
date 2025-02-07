@@ -1,4 +1,4 @@
-import { type RouteObject, RouterProvider } from "react-router";
+import { type RouteObject, RouterProvider } from "react-router-dom";
 import { createRouter } from "./router";
 import { RouterType } from "./types";
 import { createRoot } from "react-dom/client";

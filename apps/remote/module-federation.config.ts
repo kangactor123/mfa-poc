@@ -4,10 +4,10 @@ export const mfConfig = {
   name: "remote",
   filename: "remoteEntry.js",
   exposes: {
-    "./button": "./src/Button.tsx",
-    "./inject": "./src/injector.tsx",
+    "./injector": "./src/injector.tsx",
   },
   shared: {
+    ...dependencies,
     react: {
       singleton: true,
       requiredVersion: dependencies.react,
@@ -15,6 +15,9 @@ export const mfConfig = {
     "react-dom": {
       singleton: true,
       requiredVersion: dependencies["react-dom"],
+    },
+    "@mfa/shell-router": {
+      singleton: true,
     },
   },
 };

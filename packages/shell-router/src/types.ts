@@ -1,4 +1,4 @@
-import { type RouteObject } from "react-router";
+import { type RouteObject } from "react-router-dom";
 import { injectFactory } from "./injector";
 
 export type RouterType = "browser" | "memory";

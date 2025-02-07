@@ -1,6 +1,6 @@
 {
   "name": "@mfa/remote2",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "start": "cross-env NODE_ENV=development rspack serve",
     "preview": "cd dist && cross-env PORT=3002 npx serve -s",
@@ -22,8 +22,11 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@mfa/shell-router": "workspace:*",
     "@module-federation/enhanced": "^0.8.9",
+    "cross-env": "^7.0.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6"
   }
 }
