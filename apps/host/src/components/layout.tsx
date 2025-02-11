@@ -6,10 +6,8 @@ const Layout = () => {
   useShellNavigateListener();
   return (
     <ErrorBoundary fallback="error">
-      <div>
-        shell
-        <Outlet />
-      </div>
+      shell
+      <Outlet />
     </ErrorBoundary>
   );
 };
