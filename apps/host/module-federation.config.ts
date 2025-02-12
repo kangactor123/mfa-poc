@@ -3,7 +3,9 @@ import { dependencies } from "./package.json";
 export const mfConfig = {
   name: "host",
   filename: "remoteEntry.js",
-  exposes: {},
+  exposes: {
+    "./store": "./src/store",
+  },
   shared: {
     ...dependencies,
     react: {
@@ -13,6 +15,9 @@ export const mfConfig = {
     "react-dom": {
       singleton: true,
       requiredVersion: dependencies["react-dom"],
+    },
+    zustand: {
+      singleton: true,
     },
     "@mfa/shell-router": {
       singleton: true,

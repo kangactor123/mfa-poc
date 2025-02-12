@@ -78,7 +78,15 @@ export default defineConfig({
     new rspack.HtmlRspackPlugin({
       template: "./index.html",
     }),
-    new ModuleFederationPlugin(mfConfig),
+    new ModuleFederationPlugin({
+      ...mfConfig,
+      shared: {
+        ...mfConfig.shared,
+        zustand: {
+          singleton: true,
+        },
+      },
+    }),
     isDev ? new RefreshPlugin() : null,
   ].filter(Boolean),
   optimization: {
