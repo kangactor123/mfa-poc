@@ -1,5 +1,3 @@
-import { dependencies } from "./package.json";
-
 export const mfConfig = {
   name: "remote2",
   filename: "remoteEntry.js",
@@ -7,14 +5,14 @@ export const mfConfig = {
     "./injector": "./src/injector.tsx",
   },
   shared: {
-    ...dependencies,
+    "react-router-dom": {
+      singleton: true,
+    },
     react: {
       singleton: true,
-      requiredVersion: dependencies.react,
     },
     "react-dom": {
       singleton: true,
-      requiredVersion: dependencies["react-dom"],
     },
     "@mfa/shell-router": {
       singleton: true,
